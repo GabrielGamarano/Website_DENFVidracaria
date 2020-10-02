@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Gill Sans, sans-serif;
+    margin: 0;    
+    background: url(Images/background/tiny-pieces-of-broken-glass-in-grayscale-photography-4045685.jpg) no-repeat center center/cover;
+    color: rgb(19, 18, 18);    
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;  
+    overflow-x: hidden;  
+}
+
+
+
+@media screen and (max-width: 700px){
+    
+    .container{        
+        font-size: 3.5vh;
+         
+    }
+    #Home h1{
+        font-size: 3rem;
+    }
+    
+    section p{
+        font-size: 0.8rem;
+    }
+
+    .nav {
+        position: fixed;
+        width: 100%;
+        height: 40px;
+    }
+    .nav a{
+        display: flex;
+        font-size: 1.5vh;
+    }
+
+    
+    .toggle-button{
+        position: absolute;
+        top: .9rem;
+        right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        
+    }
+    
+    .toggle-button .bar{
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        
+    
+    }
+
+    .navbar-link{
+       display: none;
+       width: 100%;
+       height: 8vh;
+    }
+
+    .navbar-link{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-link ul{
+        flex-direction: column;
+        width: 100%;        
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.7);
+
+    }
+
+    .navbar-link li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-link.active{
+        display: flex;
+    }
+    /* botões para media social */
+    .icon-bar {
+        z-index: 10;
+        position: fixed;
+        top: 13.5%;
+        left: 0%;
+        -webkit-transform: translateY(-50%, -50%);
+        -ms-transform: translateY(-50%, -50%);
+        transform: translateY(-50%, -50%);
+      }
+      
+      .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        font-size: 20px;
+      }
+      
+      .icon-bar a:hover {
+        background-color: #000;
+      }
+}
+
+
+main{
+    margin: auto;
+    width: 90%;
+}
+
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    /* CSS smooth scroll entra aqui*/
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar-link ul li{
+    margin: 0, 1rem;
+    padding: 1rem;
+  
+}
+
+.navbar-link li:hover{
+    background-color: #555;
+}
+
+.navbar-link li a{
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+
+}
+
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: top;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    
+}
+
+section h1{
+    color: white;
+    font-size: 4rem;
+    text-shadow: 2px rgba(0, 0, 0, 0.7);
+    border: white 2px solid;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.233);
+    backdrop-filter: blur(5px) saturate(1.8);
+    text-align: center;
+    
+}
+
+
+ .cards{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: top;
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 5px  rgba(0, 0, 0, 0.911);
+    margin-bottom: 20px;
+    padding: 0 1.5rem;
+} 
+.cards h2{
+    display: flex;
+}
+.cards p{
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.cards-1{
+    position: relative;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: top;
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 5px  rgba(0, 0, 0, 0.911);
+    margin-bottom: 20px;
+    padding: 0 1.5rem;
+}
+
+section h2{
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+    padding: 10px;    
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    
+}
+
+section p {
+    color:black;
+    /* background: rgba(0, 0, 0, 0.5); */
+    text-align: center;
+    font-size: 1rem;    
+    padding: 30px;
+    letter-spacing: 0.1rem;
+}
+
+
+section#Home {
+    background: url(Images/skyscraper-1149478_1920.jpg) no-repeat center center/cover;
+}
+
+.gallery{
+    position: relative;    
+    transition: 2s;     
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px 100px;
+    grid-gap: 5px;
+   /* grid-template-areas: ; */    
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+
+.gallery p{
+    position: relative; 
+    display: flexbox;
+    float: left;   
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.galerry-item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-item .images {    
+    width: 100%;
+    height: 100%;  
+    overflow: hidden;
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.582);
+}
+
+
+.gallery img:hover{
+     filter: grayscale(100%);
+     -webkit-filter: grayscale(100%);
+     transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     -o-transform: scale(1.1);
+}
+
+.gallery-item .images img{
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+
+}
+
+.w-1{
+    grid-column: span 3;
+}
+.w-3{
+    grid-column: span 2;
+}
+.w-4{
+    grid-column: span 2;
+}
+
+.w-5{
+    grid-column: span 2;
+}
+
+.w-6{
+    grid-column: span 2;
+}
+
+.w-7{
+    grid-column: span 1;
+}
+
+.w-8{
+    grid-column: span 3;
+}
+
+
+section#Agendar p{
+    color: #f4f4f4;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 1px rgba(230, 221, 221, 0.3);
+}
+
+section#Agendar a{
+    color: #44a350;
+    text-decoration: none;
+}
+
+
+section#About p{
+    color: #f4f4f4;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 1px rgba(230, 221, 221, 0.3);
+}
+
+section#Contact p{
+    color: #f4f4f4;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 1px rgba(230, 221, 221, 0.3);
+}
+
+#map{
+    margin-top: 20px;
+    width: 65%;
+    height: 400px;
+}
+
+footer{
+    margin-top: 20px;
+    height: 50px;
+    background: rgba(167, 164, 164, 0.8);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+footer h2{ 
+    color: #242222;
+    font-size: 1.5vh;
+}
+
+
+
+
+
